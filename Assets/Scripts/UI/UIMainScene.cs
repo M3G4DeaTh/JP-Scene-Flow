@@ -28,7 +28,10 @@ public class UIMainScene : MonoBehaviour
         InfoPopup.gameObject.SetActive(false);
         ResourceDB.Init();
     }
-
+    public void BackToMain()
+    {
+        SceneManager.LoadScene(0);
+    }
     private void OnDestroy()
     {
         Instance = null;
